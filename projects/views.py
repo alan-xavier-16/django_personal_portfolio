@@ -12,7 +12,7 @@ def project_index(request):
     projects = Project.objects.all()
     # Context dictionary to send to template
     context = {
-        'project': projects
+        'projects': projects
     }
     return render(request, 'project_index.html', context)
 
